@@ -5,7 +5,7 @@ const Keypad = ({ usedKeys }) => {
     const port = process.env.PORT || 8000 
 
     useEffect(() => {
-        fetch('https://fake-wordle-json.herokuapp.com/letters')
+        fetch('https://json-sever-101.herokuapp.com/letters')
         .then((res) => res.json())
         .then(json => {
             setLetters(json)

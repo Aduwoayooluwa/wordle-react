@@ -33,24 +33,30 @@ const Worlde = ({ solution }) => {
         setShowSoln(true)
     }
 
+    function handleNotClick() {
+        setShowSoln(false)
+    }
+
     return (
         <div>   
             {
                 !showSoln ? (
                     <div>
-                        
+                        <button className='show_soln' onClick={handleClick}>Show Answer</button>
                     </div>
                 ) :
 
                 (
                     <div>
                         <p>solution - {solution}</p>
+                        <button className='show_soln' onClick={handleNotClick}>Hide Button</button>
                     </div>
                 )
             }
                 
                 {/* <p>Current Guess - { currentGuess }</p> */}
-                <button className='show_soln' onClick={handleClick}>Show Answer</button>
+                
+                
                 <Grid currentGuess={currentGuess} guesses={guesses} turn={turn}/>
         
                 <Keypad usedKeys={usedKeys} />
