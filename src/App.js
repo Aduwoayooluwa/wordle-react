@@ -11,7 +11,7 @@ function App() {
   const port = process.env.PORT || 8000 
 
   useEffect(() => {
-    fetch(`http://localhost:${port}/solutions`)
+    fetch('https://fake-wordle-json.herokuapp.com/solutions')
     .then(res => res.json())
     .then(json => {
       // random number btw 0 and 14
