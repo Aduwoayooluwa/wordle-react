@@ -1,0 +1,86 @@
+:root {
+    --border: rgba(0,0,0,.2);
+    --shadow: #000;
+    --heading: rgba(255,100,0,1);
+    --main: #1d8f13;
+    --text: #000;
+    --textAlt: #fff;
+    --inactive: rgba(0,0,0,.3);
+    --background: #fff;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.nav div {
+    padding: 7px;
+    position: absolute;
+    left: 60%;
+}
+
+.nav button {
+    padding: 10px;
+    width: 16vh;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(112, 212, 230);
+}
+
+.show_soln {
+    padding: 15px; 
+    width: 30vh;
+    background: rgb(86, 235, 98);
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.switch-div {
+    position: fixed;
+    transform: translateX(20%);
+}
+
+
+.Switch { 
+    border-color: var(--border); 
+    }
+
+.icon { 
+    color: var(--inactive); 
+    }
+
+
+
+    /* Transitons for smooth theme change */
+*:not(body) {
+    transition: all .5s ease;
+    }
+    .Switch {
+        width: 4rem;
+        height: 2rem;
+        margin: 2rem 0;
+        position: relative;
+        border-radius: 10px;
+        border-width: 1px;
+        border-style: solid;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: 4px 4px 10px -3px black;
+        background: none;
+        padding: 0; 
+}
+
+.Switch .icon {
+        font-size: 1.3rem;
+}
+
+button {
+        outline: none;
+        cursor: pointer;
+}
